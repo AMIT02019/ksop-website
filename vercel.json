@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/_next/static/(.*)",
+      "dest": "/_next/static/$1"
+    },
+    {
+      "src": "/gallery/(.*)",
+      "dest": "/gallery/$1"
+    },
+    {
+      "src": "/keshav_shrusti_image/(.*)",
+      "dest": "/keshav_shrusti_image/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/icon.png",
+      "dest": "/icon.png"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/site.js",
+      "dest": "/site.js"
+    },
+    {
+      "handle": "filesystem"
+    }
+  ]
+}

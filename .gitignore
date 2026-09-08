@@ -1,0 +1,11 @@
+# Temporary extraction and scraper files
+_woblo_fp/
+_woblo_assets/
+*.zip
+screenshot_*.png
+*.palette.Woblo.png
+
+# Vercel & system files
+.vercel/
+.DS_Store
+Thumbs.db
