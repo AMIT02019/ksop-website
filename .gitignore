@@ -9,3 +9,4 @@ screenshot_*.png
 .vercel/
 .DS_Store
 Thumbs.db
+.vercel
