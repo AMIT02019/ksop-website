@@ -160,7 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (n < -half) n += total;
 
                     const isPortrait = card.classList.contains('w-[220px]') || card.classList.contains('md:w-[320px]') || (card.querySelector('img')?.src || '').includes('IMG20260704');
-                    const stepX = isMobile ? (isPortrait ? 130 : 160) : (isPortrait ? 240 : 320);
+                    const cardW = card.offsetWidth || (isPortrait ? 240 : 360);
+                    const stepX = isMobile ? (isPortrait ? 130 : 160) : Math.min(cardW * 0.9, 280);
                     const x = n * stepX;
                     const absN = Math.abs(n);
 
