@@ -512,35 +512,50 @@
 
 /* Responsive Viewport Fit for Captured Moments Gallery */
 #gallery {
-    padding-top: clamp(1.5rem, 3vh, 2.5rem) !important;
-    padding-bottom: clamp(1.5rem, 3vh, 2.5rem) !important;
+    padding-top: clamp(1rem, 2.5vh, 2rem) !important;
+    padding-bottom: clamp(1rem, 2.5vh, 2rem) !important;
     overflow: hidden !important;
 }
 
-#gallery .space-y-8, #gallery .md\\:space-y-12 {
+#gallery .space-y-8, #gallery .md\:space-y-12 {
     gap: 0.5rem !important;
 }
 
 #gallery .text-center.max-w-3xl {
+    position: relative !important;
+    z-index: 30 !important;
     padding-bottom: 0 !important;
     margin-bottom: 0.25rem !important;
 }
 
+#gallery .text-center.max-w-3xl h2 {
+    font-size: clamp(1.75rem, 3.2vw, 2.5rem) !important;
+    line-height: 1.25 !important;
+}
+
 #gallery .relative.w-full.max-w-5xl {
-    padding-top: clamp(0.5rem, 1.5vh, 1.25rem) !important;
-    padding-bottom: 0.5rem !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    margin-top: 0.25rem !important;
 }
 
 #moments-cards-container {
-    height: clamp(320px, 46vh, 440px) !important;
+    height: clamp(300px, 42vh, 380px) !important;
 }
 
-#moments-cards-container > div.w-\\[220px\\] {
-    height: clamp(290px, 42vh, 400px) !important;
-    width: clamp(190px, 28vh, 265px) !important;
+#moments-cards-container > div {
+    max-height: clamp(280px, 40vh, 360px) !important;
 }
 
-#moments-cards-container > div.w-\\[280px\\] {
-    width: clamp(310px, 50vh, 460px) !important;
-    height: clamp(200px, 32vh, 305px) !important;
+#moments-cards-container > div[class*="w-[220px]"],
+#moments-cards-container > div[class*="md:w-[320px]"] {
+    height: clamp(280px, 39vh, 360px) !important;
+    width: clamp(185px, 26vh, 240px) !important;
 }
+
+#moments-cards-container > div[class*="w-[280px]"],
+#moments-cards-container > div[class*="md:w-[480px]"] {
+    width: clamp(270px, 44vh, 400px) !important;
+    height: clamp(180px, 28vh, 260px) !important;
+}
+

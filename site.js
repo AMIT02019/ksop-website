@@ -181,20 +181,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         // Center Active Card
                         card.style.opacity = '1';
                         card.style.zIndex = '25';
-                        card.style.transform = `perspective(900px) translateX(0px) translateZ(150px) scale(1.15) rotateY(0deg)`;
+                        card.style.transform = `perspective(900px) translateX(0px) translateY(8px) translateZ(70px) scale(1.04) rotateY(0deg)`;
                     } else if (absN === 1) {
                         // Immediate Left / Right Card
-                        card.style.opacity = '0.7';
+                        card.style.opacity = '0.72';
                         card.style.zIndex = '20';
-                        const rot = -38 * n;
-                        card.style.transform = `perspective(900px) translateX(${x}px) translateZ(-160px) scale(0.88) rotateY(${rot}deg)`;
+                        const rot = -35 * n;
+                        card.style.transform = `perspective(900px) translateX(${x}px) translateZ(-80px) scale(0.9) rotateY(${rot}deg)`;
                     } else if (absN === 2) {
                         // Outer Left / Right Card
                         card.style.opacity = '0.45';
                         card.style.zIndex = '18';
-                        const rot = n > 0 ? -72 : 72;
+                        const rot = n > 0 ? -65 : 65;
                         const farX = n * (isMobile ? stepX * 1.1 : stepX * 1.15);
-                        card.style.transform = `perspective(900px) translateX(${farX}px) translateZ(-240px) scale(0.8) rotateY(${rot}deg)`;
+                        card.style.transform = `perspective(900px) translateX(${farX}px) translateZ(-160px) scale(0.82) rotateY(${rot}deg)`;
                     }
                 });
             };
